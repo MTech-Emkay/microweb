@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Microsoft",
+			"path": "."
+		},
+		{
+			"name": "images",
+			"path": "../../Pictures/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Microsoft"
+	}
+}
