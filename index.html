@@ -11,24 +11,27 @@
     <title>Microsoft home page</title>
 </head>
 <body>
-    <div class="menubutton">
-        <i class="fas fa-bars"></i>
-    </div>
+    
     <div class="container">
         <header>
-            <img src="images/logo.png" alt="">
-
-            <ul class="mainmenu">
-                <li><a href="#">Office</a></li>
-                <li><a href="#">Windows</a></li>
-                <li><a href="#">Surface</a></li>
-                <li><a href="#">Xbox</a></li>
-                <li><a href="#">Deals</a></li>
-                <li><a href="#">Support</a></li>
-            </ul>
+            <a href="/index.html"><img src="images/logo.png" alt=""></a>
+            <nav>
+                <ul role="list" class="mainmenu">
+                    <li role="listitem"><a href="#">Office</a></li>
+                    <li role="listitem"><a href="#">Windows</a></li>
+                    <li role="listitem"><a href="#">Surface</a></li>
+                    <li role="listitem"><a href="#xbox">Xbox</a></li>
+                    <li role="listitem"><a href="#">Deals</a></li>
+                    <li role="listitem"><a href="#support">Support</a></li>
+                </ul>
+            </nav>
+            
             <div class="btn">
                 <i class="fas fa-search"></i>
                 <i class="fas fa-shopping-cart"></i> 
+                <div class="menubutton">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>        
         </header>
 
@@ -67,7 +70,7 @@
             </div>
         </section>
 
-        <section class="section3">
+        <section id="xbox" class="section3">
             <div class="container3">
                 <h1>
                     Xbox Game Pass Ultimate
@@ -108,7 +111,7 @@
             </div>
         </section>
 
-        <section class="section5">
+        <section id="support" class="section5">
              <div class="container5">
                 <h1>
                     Commiting To Carbon Negative
@@ -210,9 +213,7 @@
             </ul>
         </div>
     </footer>
-</body>
 
-<script>
-        document.querySelector('.menubutton').addEventListener('click', () => document.querySelector('.mainmenu').classList.toggle('show'));
-    </script>
+    <script src="/js/script.js"></script>
+</body>
 </html>
